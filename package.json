@@ -1,0 +1,8 @@
+{
+  "name": "js",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "@ui5/webcomponents": "1.20.1"
+  }
+}

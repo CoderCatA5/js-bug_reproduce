@@ -1,0 +1,138 @@
+<div id="app">
+  <ui5-title>Hello UI5 Web Components</ui5-title>
+  <ui5-label>Find more components in our</ui5-label
+  ><ui5-link href="https://sap.github.io/ui5-webcomponents/playground"
+    >Playground</ui5-link
+  >
+  <br /><br /><br />
+
+  <ui5-title level="H5">Buttons</ui5-title>
+  <ui5-button>Primary button</ui5-button>
+  <ui5-button design="Transparent">Secondary button</ui5-button>
+  <ui5-button disabled>Inactive</ui5-button>
+  <ui5-button design="Positive">Agree</ui5-button>
+  <ui5-button design="Negative">Decline</ui5-button>
+  <ui5-button design="Attention">Warning</ui5-button><br />
+  <br /><br /><br />
+
+  <ui5-title level="H5">Inputs</ui5-title><br />
+  <ui5-input></ui5-input>
+  <ui5-select id="selectPrevent">
+    <ui5-option>Cozy</ui5-option>
+    <ui5-option>Compact</ui5-option>
+    <ui5-option selected>Condensed</ui5-option>
+  </ui5-select>
+  <ui5-date-picker></ui5-date-picker>
+  <br /><br /><br />
+
+  <ui5-title level="H5">Avatars</ui5-title><br />
+  <ui5-avatar size="XS" initials="XS"></ui5-avatar>
+  <ui5-avatar size="S" initials="S"></ui5-avatar>
+  <ui5-avatar size="M" initials="M"></ui5-avatar>
+  <ui5-avatar size="L" initials="L"></ui5-avatar>
+  <br /><br /><br />
+
+  <ui5-title level="H5">Messages</ui5-title><br />
+  <ui5-message-strip class="top" design="Negative"
+    >Negative with <b>default</b> icon and close button</ui5-message-strip
+  >
+  <ui5-message-strip class="top" design="Warning"
+    >Warning with default icon and close button</ui5-message-strip
+  >
+  <ui5-message-strip class="top" design="Positive"
+    >Positive with default icon and close button</ui5-message-strip
+  >
+
+  <br /><br /><br />
+  <ui5-title level="H5">Dialog</ui5-title><br />
+  <ui5-button id="opener">Open dialog</ui5-button>
+  <ui5-dialog id="dialog" header-text="Title">
+    <ui5-title level="H5"
+      >I am a Dialog <ui5-label>(press ESC to close)</ui5-label></ui5-title
+    >
+  </ui5-dialog>
+
+  <br /><br /><br />
+  <ui5-title level="H5">List</ui5-title><br />
+  <ui5-list mode="MultiSelect">
+    <ui5-li>item 1</ui5-li>
+    <ui5-li>item 2</ui5-li>
+  </ui5-list>
+
+  <br /><br /><br />
+
+  <ui5-title level="H5">Table</ui5-title><br />
+  <ui5-table>
+    <ui5-table-row type="Active">
+      <ui5-table-cell>
+        <span>Notebook Basic 15</span>
+      </ui5-table-cell>
+
+      <ui5-table-cell>
+        <span>Very Best Screens</span>
+      </ui5-table-cell>
+
+      <ui5-table-cell>
+        <span>30 x 18 x 3cm</span>
+      </ui5-table-cell>
+
+      <ui5-table-cell>
+        <span style="color: #2b7c2b">
+          <b style="padding-right: 0.125rem">4.2</b>
+          KG
+        </span>
+      </ui5-table-cell>
+
+      <ui5-table-cell>
+        <span>
+          <b style="padding-right: 0.125rem">956</b>
+          EUR
+        </span>
+      </ui5-table-cell>
+    </ui5-table-row>
+
+    <ui5-table-column slot="columns" popin-display="Inline">
+      <span>Product</span>
+    </ui5-table-column>
+
+    <ui5-table-column
+      slot="columns"
+      min-width="600"
+      popin-text="Supplier"
+      demand-popin=""
+      popin-display="Inline"
+    >
+      <span>Supplier</span>
+    </ui5-table-column>
+
+    <ui5-table-column
+      slot="columns"
+      min-width="800"
+      popin-text="Dimensions"
+      demand-popin=""
+      class="table-header-text-alignment"
+      popin-display="Inline"
+    >
+      <span>Dimensions</span>
+    </ui5-table-column>
+
+    <ui5-table-column
+      slot="columns"
+      min-width="800"
+      popin-text="Weight"
+      demand-popin=""
+      class="table-header-text-alignment"
+      popin-display="Inline"
+    >
+      <span>Weight</span>
+    </ui5-table-column>
+
+    <ui5-table-column
+      slot="columns"
+      class="table-header-text-alignment"
+      popin-display="Inline"
+    >
+      <span>Price</span>
+    </ui5-table-column>
+  </ui5-table>
+</div>
